@@ -25,3 +25,4 @@ function getZodiac(month, day) {
       return 'Aquarius';
     } else return null;
   }
+  
