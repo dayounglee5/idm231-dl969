@@ -20,7 +20,7 @@
 .container{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: 20% repeat(3, 1fr);
     place-items: center;
     justify-content: space-between;
 
@@ -67,10 +67,11 @@ h4{
 .rectangle{
     width: 1270px;
     height:239px;
-    opacity: 40%;
+    opacity: 30%;
     background-color: var(--secondary-color);
     grid-column: 2 / span 4;
     grid-row: 2;
+    z-index: -20;
 }
 
 .bold-text {
@@ -92,11 +93,11 @@ div{
     grid-column: 3 / span 2;
     grid-row: 3;
     gap:14px;
+    margin-top: 1.5rem;
 }
 
 img{
     border: 1px solid #33CEE5;
-
 }
 
 div{
@@ -108,4 +109,5 @@ div{
     grid-column: 3 / span 2;
     grid-row: 4;
     gap:14px;
+    margin-top: 1rem;
 }
