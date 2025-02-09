@@ -17,15 +17,16 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     margin-bottom: 3rem;
-}
+} */
 .container{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 20% repeat(3, 1fr);
     place-items: center;
     justify-content: space-between;
+    padding-bottom: 10rem;
 
 } 
 
