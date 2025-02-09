@@ -17,6 +17,9 @@
     box-sizing: border-box;
 }
 
+body{
+    padding-bottom: 3rem;
+}
 .container{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -112,11 +115,27 @@ div{
     margin-top: 1rem;
 }
 
-#date-picker{
+.input-container{
     grid-column: 2 / span 4;
     grid-row: 2;
     justify-self: center;
-    margin-top: 6rem;
     align-self: center;
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
 }
+
+#date-picker{
+    font-family: "PlusJakartaSans";
+}
+.submit-button{
+    font-family: "PlusJakartaSans";
+    background-color: var(--secondary-color);
+    color: var(--main-color);   
+    border: 1px solid var(--secondary-color);
+    border-radius: 100px;
+}
+
+
 
