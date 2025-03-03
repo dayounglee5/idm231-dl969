@@ -8,32 +8,153 @@
 </head>
 <body>
     <section class="container">
+        <div class="need-help-container">
+            <img src="media/pictures/sun.png" alt="help-content" width="120px" class="help-button">
+            <div id="need-help" class="needhelp">
+                <b class="help-text">click me for help!</b>
+                <button class="close-btn-help">&times;</button>
+
+                <ul class="instructions">
+                    <li>1. enter your birthday in the date field</li>
+                    <li>2. click submit!</li>
+                    <li>3. get your corresponding jellycat!</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="need-help-container">
+            <img src="media/pictures/sun.png" alt="help-button" width="150px" class="help-button">
+            <div id="need-help" class="needhelp"><b>click me for help!</b></div>
+        </div>
+            <div id = "help-content" class="instructions">
+                <button class="close-btn-help">&times;</button>
+                <ul>
+                    <li>1. enter your birthday in the date field</li>
+                    <li>2. click submit!</li>
+                    <li>3. get your matching jellycat!</li>
+                </ul>
+        </div> -->
+
+
+
         <h1>your zodiac sign but with <span class="bold-text">jellycats</span></h1>
         <h3>which <span class="bold-text2">jellycat animal</span> are you?</h3>
         <h4>enter your birthday here:</h4>
         <div class="input-container">
-        <form action="main.js" class="input-container">
-            <input type="date" id="date-picker">
-            <button type="submit" class="submit-button">submit!</button>
-        </form>
+            <form class="birthday">
+                <input type="date" id="date-picker">
+                <button type="button" id="submit-button">submit!</button>
+            </form>
+
     </div>
         <div class="rectangle"></div>
         <div id="row1">
-            <img src="media/pictures/bear.jpg" alt="bear" width="200px">
-            <img src="media/pictures/dog.jpg" alt="dog" width="200px">
-            <img src="media/pictures/hippo.jpg" alt="hippo" width="200px">
-            <img src="media/pictures/otter.jpg" alt="otter" width="200px">
-            <img src="media/pictures/axolotl.jpg" alt="axolotl" width="200px">
-            <img src="media/pictures/capybara.jpg" alt="capybara" width="200px">
+            <img src="media/pictures/bear.jpg" alt="bear" width="150px">
+            <img src="media/pictures/capybara.jpg" alt="capybara" width="150px">
+            <img src="media/pictures/otter.jpg" alt="otter" width="150px">
+            <img src="media/pictures/duck.jpg" alt="duck" width="150px">
+            <img src="media/pictures/penguin.jpg" alt="penguin" width="150px">
+            <img src="media/pictures/dinosaur.jpg" alt="dinosaur" width="150px">
         </div>
         <div id="row2">
-            <img src="media/pictures/duck.jpg" alt="duck" width="200px">
-            <img src="media/pictures/penguin.jpg" alt="penguin" width="200px">
-            <img src="media/pictures/cat.jpg" alt="cat" width="200px">
-            <img src="media/pictures/turtle.jpg" alt="turtle" width="200px">
-            <img src="media/pictures/dinosaur.jpg" alt="dinosaur" width="200px">
-            <img src="media/pictures/octopus.jpg" alt="octopus" width="200px">
+            <img src="media/pictures/cat.jpg" alt="cat" width="150px">
+            <img src="media/pictures/octopus.jpg" alt="octopus" width="150px">
+            <img src="media/pictures/dog.jpg" alt="dog" width="150px">
+            <img src="media/pictures/hippo.jpg" alt="hippo" width="150px">
+            <img src="media/pictures/hedgehog.jpg" alt="axolotl" width="150px">
+            <img src="media/pictures/turtle.jpg" alt="turtle" width="150px">
         </div>
     </section>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/bear.jpg" alt="bear" width="200px">
+        <audio id="audio-bear" src="media/sounds/bear-sound-effect.mp3" ></audio>
+        <h2>you're <b>bartholomew bear!</b></h2>
+        <p>aries, typically born between march 21 and april 19, is known for their bold, energetic nature and unyielding determination, just like <b>bartholomew!</b> as a fearless and spirited companion, <b>bartholomew</b> charges through life with confidence and a lively heart, mirroring aries' adventurous and dynamic energy. whether leading the way on a new adventure or bouncing through a playful moment, <b>bartholomew</b> embodies aries' bold enthusiasm and boundless courage.</p>
+        <button class="close-btn">&times;</button>
+
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/capybara.jpg" alt="capybara" width="200px">
+        <audio id="audio-capybara" src="media/sounds/capybara-sound-effect.mp3" ></audio>
+        <h2>you're <b>cylde capybara!</b></h2>
+        <p>taurus, typically born between april 20 and may 20, is known for their calm nature, love for comfort, and steady presence, just like <b>clyde</b>. ever grounded and easygoing, <b>clyde</b> moves through life with a serene charm, mirroring taurus’ patient and reliable spirit. whether lounging by the water or enjoying the simple pleasure of the day, <b>clyde</b> is a true reflection of taurus’ tranquil and steadfast heart. </p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/otter.jpg" alt="otter" width="200px">
+        <audio id="audio-otter" src="media/sounds/otter-sound-effect.mp3" ></audio>
+        <h2>you're <b>brooke otter!</b></h2>
+        <p>gemini, typically born between may 21 and june 21, is known for their curiosity, lively energy, and adaptability, just like <b>brooke</b>! quick-witted and full of charm, <b>brooke</b> has a way of making every encounter feel engaging and fun. whether sparkling conversations, discovering new places, or keeping spritis high, <b>brooke</b> perfectly relfects gemini’s playful and ever-curious nature.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/duck.jpg" alt="duck" width="200px">
+        <audio id="audio-duck" src="media/sounds/duck-sound-effect.mp3" ></audio>
+        <h2>you're <b>delia duck!</b></h2>
+        <p>cancer, typically born between june 22 and july 22, is known for sensitivity, love of comfort, and a sometimes moody demeanor, just like <b>delia!</b> with an adorably “sad” beak that adds to an undeniable charm, <b>delia</b> reflects cancer’s nurturing and endearing nature. Whether curled up in a cozy spot or offering quiet companionship, <b>delia</b>perfectly captures cancer’s sentimental and loving spirit.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/penguin.jpg" alt="penguin" width="200px">
+        <audio id="audio-penguin" src="media/sounds/penguin-sound-effect.mp3" ></audio>
+        <h2>you're <b>peanut penguin!</b></h2>
+        <p>leo, typically born between july 23 and august 22, is known for their warm-heartedness, playful energy, and natural charisma, just like <b>peanut</b>, whose icebergs of charm and fuzzy flippers makea star in any snow-filled scene. a friendly face and love for sliding and shaking a tail feather reflect leo’s zest for life and their knack for being the center of attention.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/dinosaur.jpg" alt="dinosaur" width="200px">
+        <audio id="audio-dinosaur" src="media/sounds/dinosaur-sound-effect.mp3" ></audio>
+        <h2>you're <b>archie dinosaur!</b></h2>
+        <p>virgo, typically born between august 23 and september 22, is known for reliability, attention to detail, and a grounded nature, just like <b>archie!</b> with a timeless presence and carefully crafted features, <b>archie</b> embodies virgo’s appreciation for structure and perfection. whether bringing joy through a reassuring presence or standing tall with quiet confidence, <b>archie</b> perfectly represents Virgo’s thoughtful, kind, and unwavering personality.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/cat.jpg" alt="cat" width="200px">
+        <audio id="audio-cat" src="media/sounds/cat-sound-effect.mp3" ></audio>
+        <h2>you're <b>iris siamese cat!</b></h2>
+        <p>libra, typically born between september 23 to october 23, is known for their elegance, charm, and love for balance, just like <b>iris!</b> ever the social butterfly, <b>iris</b> thrives in companionship, mirroring libra’s deep desire for harmony and connection. whether lounging in a sunbeam or captivating everyone with a poised demeanor, <b>iris</b> embodied libra’s natural allure and effortless grace.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/octopus.jpg" alt="octopus" width="200px">
+        <audio id="audio-octopus" src="media/sounds/octopus-sound-effect.mp3" ></audio>
+        <h2>you're <b>odyssey octopus!</b></h2>
+        <p>scorpio, typically born between october 24 and november 21, is known for their intensity, passion, and intriguing mystery, just like <b>odyssey!</b> As a fearless and bold explorer, <b>odyssey</b> thrives in the unknown, mirroring scorpio’s adventurous spirit and unrelenting drive to discover what lies beyond the horizon. whether navigating the wilderness of uncharted territories or curling up for cozy cordy cuddles, <b>odyssey</b> exudes scorpio’s magnetic charm, powerful presence, and determination to embrace life's challenges head-on.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/dog.jpg" alt="dog" width="200px">
+        <audio id="audio-dog" src="media/sounds/dog-sound-effect.mp3" ></audio>
+        <h2>you're <b>munro scottie dog!</b></h2>
+        <p>sagittarius, typically born between november 22 and december 21, is known for being curious, adventurous, and always ready for the next big journey, just like <b>munro!</b> with a warm and friendly personality, <b>munro</b> embodies sagittarius’ love for exploration and boundless enthusiasm for new experiences. whether seeking out new adventure, embracing spontaneous opportunities, or bringing energy to any environment, <b>munro</b> perfectly captures sagitarrius’ adventurer spirit and open-hearted charm. </p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden" id="hippo">
+        <img src="media/pictures/hippo.jpg" alt="hippo" width="200px">
+        <audio id="audio-hippo" src="media/sounds/hippo-sound-effect.mp3" ></audio>
+        <h2>you're <b>myrtle hippopotamus!</b></h2>
+        <p>capricorn, typically born between december 22 and january 19, is known for their determination, discipline, and grounded nature, just like <b>myrtle!</b> as a reliable and steady presence, <b>myrtle</b>navigates life with patience and a no-nonsense attitude, mirroring capricorn’s hardworking and ambitious spirit. whether standing proudly in the herd or quietly observing, <b>myrtle</b>embodies capricorn’s quiet strength and steady resolve.</p>
+        <button class="close-btn">&times;</button>
+    </div>
+    <div class="jellycat-card hidden">
+        <img src="media/pictures/hedgehog.jpg" alt="hedgehog" width="200px">
+        <audio id="audio-hedgehog" src="media/sounds/axolotl-sound-effect.mp3" ></audio>
+        <h2>you're <b>willow hedgehog!</b></h2>
+        <p>aquarius, typically born between january 20 and february 18, is known for their uniqueness, creativity, and love of standing out from the crowd, just like <b>willow!</b> With a snuffly truffle nature and velvety spines, <b>willow</b> embraces individuality with a heart-shaped face and sweet snub nose, mirroring aquarius’ inventive and free-spirited energy. whether wandering at twilight or seeking interesting bugs, <b>willow</b> embodies aquarius’ curious spirit and a knack for discovering new things, always following a unique path with joy and enthusiasm.</p>
+        <button class="close-btn">&times;</button>
+    </div>  
+   <div class="jellycat-card hidden">
+        <img src="media/pictures/turtle.jpg" alt="turtle" width="200px">
+        <audio id="audio-turtle" src="media/sounds/turtle-sound-effect.mp3" ></audio>
+        <h2>you're <b>tully turtle!</b></h2>
+        <p>pisces, typically born between february 19 to march 20, is known for their dreamy nature, gentle spirit, and deep connection to water, just like <b>tully!</b> as a free spirit, <b>tully</b> flows through life with curiousity and wonder, mirroing pisces’ imaginative and go-with-the-flow attitude. whether lolloping down the beach or bobbing in the waves, <b>tully</b> embodies pisces’ whimsical charm and boundless sense of adventure.</p>
+        <button class="close-btn">&times;</button>
+    </div> 
+
+
+   
+   
+
+    <script src="main.js"></script>
 </body>
 </html>
