@@ -29,6 +29,7 @@ function getZodiac(month, day) {
     return yourSign;
   }
 
+// console.log(getZodiac(1, 20));
 
 
 const signs = [
@@ -118,8 +119,9 @@ const signs = [
 
 ];
 
+// console.log(signs[1]);
 
-// close out button
+
 const closeBtn = document.querySelector('.close-btn');
 function closeCard(){
   const card = document.getElementById('.jellycat-card');
@@ -139,21 +141,53 @@ userSubmitButton.addEventListener('click', () => {
 })
 
 
+
 const helpImg = document.querySelector('.help-button');
 const helpBubble = document.getElementById('need-help');
 const helpText = document.querySelector('.help-text');
+const closeButton = document.querySelector('.close-btn-help');
+closeButton.style.display = 'none';
+
+
 
 helpImg.addEventListener('click', function() {
-    helpBubble.classList.add('expand');
-    helpText.textContent = 'instructions:';
+    if (helpBubble.classList.contains('expand')) {
+      collapseHelp();
+    } else {
+      expandHelp();
+    }
 });
-
-// close out button for help
-const closeButton = document.querySelector('.close-btn-help');
-function closeHelp() {
-    const helpContent = document.getElementById('need-help');
-    helpContent.style.display = 'none'; 
+function expandHelp() {
+  helpBubble.classList.add('expand');
+  helpText.textContent = 'instructions:';
+  closeButton.style.display = 'block';
 }
-closeButton.addEventListener('click', closeHelp);
+
+function collapseHelp() {
+  helpBubble.classList.remove('expand');
+  document.getElementById('need-help').style.display = 'block';
+  helpText.textContent = 'click me for help!';
+  closeButton.style.display = 'none';
+}
+
+closeButton.addEventListener('click', collapseHelp);
 
 
+const bear = document.getElementById('bear');
+const capybara = document.getElementById('capybara');
+const otter = document.getElementById('otter');
+const duck = document.getElementById('duck');
+const penguin = document.getElementById('penguin');
+const dinosaur = document.getElementById('dinosaur');
+const cat = document.getElementById('cat');
+const octopus = document.getElementById('octopus');
+const dog = document.getElementById('dog');
+const hippo = document.getElementById('hippo');
+const turtle = document.getElementById('turtle'); 
+const hedgehog= document.getElementById('hedgehog');
+
+bear.addEventListener('click', () => {
+  console.log('bear clicked')
+  const audio = document.getElementById('audio-bear');
+  audio.play();
+});
