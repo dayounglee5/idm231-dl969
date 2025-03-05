@@ -48,6 +48,13 @@ helpImg.addEventListener('click', function() {
       expandHelp();
     }
 });
+helpBubble.addEventListener('click', function(){
+  if (helpBubble.classList.contains('expand')) {
+    collapseHelp();
+  } else {
+    expandHelp();
+  }
+});
 function expandHelp() {
   helpBubble.classList.add('expand');
   helpText.textContent = 'instructions:';
