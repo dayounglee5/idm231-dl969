@@ -155,7 +155,96 @@ div{
     }
 }
 
+.need-help-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
 
+.help-button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.speech-bubble {
+    bottom: 30px;
+    position: absolute;
+    background-color: #CAF0F7;
+    border-radius: 20px;
+    padding: 10px 15px;
+    left: 100%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--main-color);
+    font-family: 'PlusJakartaSans';
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #CAF0F7 transparent transparent;
+}
+
+.help-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-width: 500px;
+    text-align: center;
+    display: grid;
+;
+}
+
+.help-card h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family: 'PlusJakartaSans';
+    font-weight: 500;
+}
+
+.instructions {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: 'PlusJakartaSans';
+    list-style:none;
+}
+
+.close-btn-help {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.hidden {
+    display: none;
+}
+/* 
 .needhelp{
     display: flex;
     flex-direction: column;
@@ -234,12 +323,11 @@ div{
 }
 .help-button{
     cursor: pointer;
-}
+} */
 
-
+/* 
 .close-btn-help{
     position: absolute;
-    /* display:none; */
     top: -2px;
     right: 10px;
     color: var(--main-color);
@@ -248,7 +336,7 @@ div{
     border: none;
     cursor: pointer;
     transition: var(--background-color) 0.2s, transform 0.2s;
-}
+} */
 .jellycat-card img{
     width: 200px;
     grid-column: 1;
@@ -287,6 +375,8 @@ div{
     padding: 3rem;
     border-radius: 50px;
     border: #33CEE5 1px solid;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
 
 }
 .close-btn{
