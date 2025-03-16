@@ -32,43 +32,7 @@ function getZodiac(month, day) {
 // console.log(getZodiac(1, 20));
 
 
-//help 
-// const helpImg = document.querySelector('.help-button');
-// const helpBubble = document.getElementById('need-help');
-// const helpText = document.querySelector('.help-text');
-// const closeButton = document.querySelector('.close-btn-help');
-// closeButton.style.display = 'none';
 
-
-
-// helpImg.addEventListener('click', function() {
-//     if (helpBubble.classList.contains('expand')) {
-//       collapseHelp();
-//     } else {
-//       expandHelp();
-//     }
-// });
-// helpBubble.addEventListener('click', function(){
-//   if (helpBubble.classList.contains('expand')) {
-//     collapseHelp();
-//   } else {
-//     expandHelp();
-//   }
-// });
-// function expandHelp() {
-//   helpBubble.classList.add('expand');
-//   helpText.textContent = 'instructions:';
-//   closeButton.style.display = 'block';
-// }
-
-// function collapseHelp() {
-//   helpBubble.classList.remove('expand');
-//   document.getElementById('need-help').style.display = 'block';
-//   helpText.textContent = 'click me for help!';
-//   closeButton.style.display = 'none';
-// }
-
-// closeButton.addEventListener('click', collapseHelp);
 
 //help
 document.addEventListener('DOMContentLoaded', function() {
